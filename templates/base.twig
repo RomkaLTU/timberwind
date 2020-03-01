@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+<head>
+    <meta charset="{{ site.charset }}" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ site.description }}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="{{ site.theme.link }}/style.css" type="text/css" media="screen" />
+    {{function('wp_head')}}
+</head>
+<body class="{{body_class}}" data-template="base.twig">
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+{{ function('wp_footer') }}
+</body>
+</html>
