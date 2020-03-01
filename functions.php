@@ -61,3 +61,14 @@ add_action('widgets_init', function () {
          'id' => 'sidebar-primary'
      ] + $config);
 });
+
+/**
+ * Adding globals to theme context
+ */
+add_filter('timber/context', function ($context) {
+
+    // access it in template with {{ main_menu }}
+    $context['main_menu'] = new \Timber\Menu('primary_navigation');
+
+    return $context;
+});
